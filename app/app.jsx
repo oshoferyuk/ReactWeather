@@ -5,7 +5,11 @@ var Main = require('./components/Main');
 var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
-//WEATHER_KEY_API = 9fccb848daf99c27156bc16d3a3ebba5
+
+// Load foundation
+require('style!css!foundation-sites/dist/foundation.min.css');
+
+$(document).foundation();
 
   ReactDOM.render(
     <Router history={hashHistory}>
